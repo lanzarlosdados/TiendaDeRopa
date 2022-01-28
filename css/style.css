@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&display=swap');
+:root{
+    --color-principal:rgb(245, 71, 72);
+    --color-secundario:rgb(250, 250, 251);
+    --color-btn-hoover:rgb(244, 137, 36);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Comforter', cursive;
+}
