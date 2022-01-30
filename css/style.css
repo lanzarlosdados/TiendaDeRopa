@@ -24,6 +24,8 @@ button{
     cursor: pointer;
     transition:background 0.5s ease;
     font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
 }
 button:hover{
     background:var(--color-btn-hoover)
@@ -59,6 +61,7 @@ img{
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 /*HEADER*/
 header{
@@ -105,9 +108,6 @@ header{
     letter-spacing: 1px;
 }
 .btn_slider{
-    width: 120px;
-    height: 40px;
-    border-radius: 20px;
     margin-top: 20px;
 }
 /*-----------------------SERVICIOS-----------------*/
@@ -130,9 +130,6 @@ header{
     height: 70vh;
 }
 .btn_services{
-    width: 160px;
-    height: 40px;
-    border-radius: 20px;
     margin: auto;
     margin-top: 30px;
 }
@@ -141,6 +138,7 @@ header{
 .clientes{
     background: var(--color-secundario);
     margin-top: 50px;
+    overflow: hidden;
 }
 .contenedor-clientes_card{
     width: 90%;
@@ -187,6 +185,103 @@ header{
     display: block;
     width: 93px;
     margin-top: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-bottom: 2px solid var(--color-principal);
+}
+
+/*-----------------------Experiencia-----------------*/
+.experiencia{
+    width: 90%;
+    margin: auto;
+}
+.experiencia_descripcion-texto{
+    font-size: 17px;
+    letter-spacing: .3px;
+}
+.btn-experiencia{
+    margin: 30px 0;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.contenedor_iframe{
+    height: 300px;
+}
+/*-----------------------Trabajos-----------------*/
+.trabajos{
+    margin-top: 80px;
+}
+.content_img-trabajos{
+    height: 350px;
+}
+.content_our-trabajos{
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    width: 90%;
+    margin-left: 10px;
+    color: #fff;
+}
+.trabajo_descripcion-texto{
+    margin: 20px 0;
+}
+.content_our-works{
+    padding: 20px;
+}
+.content_our-icon{
+    background: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 250px;
+}
+.our-icon{
+    color: var(--color-principal);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.our_icon-title{
+    font-size: 25px;
+    padding: 8px;
+}
+/*-----------------------Blog-----------------*/
+.content_blog{
+    width: 90%;
+    margin: auto;
+}
+.blog_card{
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.blog_card-img{
+    height: 200px;
+    width: 100%;
+}
+.fas,
+.far{
+    color: var(--color-principal);
+}
+.blog_card-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.blog_card-title{
+    padding: 10px;
+}
+.blog_card-enlace{
+    display: block;
+    width: 95px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
