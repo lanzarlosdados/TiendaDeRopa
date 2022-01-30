@@ -72,9 +72,7 @@ header{
     box-shadow: 0 0 6px rgb(0, 0, 0, .5);
 }
 .btn_menu{
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 10px;
     border-radius: 5px;
 }
@@ -264,8 +262,8 @@ iframe{
     height: 200px;
     width: 100%;
 }
-.fas,
-.far{
+.fa-user,
+.fa-clock{
     color: var(--color-principal);
 }
 .blog_card-info{
@@ -289,3 +287,45 @@ iframe{
     border-bottom: 2px solid var(--color-principal);
 }
 /*-----------------------Blog-----------------*/
+
+footer{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.445) 0%, rgba(32, 32, 32, 0.473) 100%), url(../img/imgFooter.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+.footer_card{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.footer_title{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer_text{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.content_redes-sociales i{
+    font-size: 25px;
+    color: #fff;
+    margin: 0 10px 0 0 ;
+}
+.footer_card ul li{
+    list-style: none;
+    color: #fff;
+    padding: 5px 0;
+}
+.footer_card a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+
+/*-----------------------MediaQueries-----------------*/
+
+
+@media screen and (min-width:1024px){
