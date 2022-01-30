@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:ital,wght@1,300;1,400;1,600;1,700&display=swap');
+
 :root{
     --color-principal:rgb(245, 71, 72);
     --color-secundario:rgb(250, 250, 251);
     --color-btn-hoover:rgb(244, 137, 36);
 }
+/*Estilos Principales*/
 *{
     margin: 0%;
     padding: 0%;
@@ -12,6 +14,113 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-h1{
-    font-family: 'Comforter', cursive;
+button{
+    display: block;
+    border-style: none;
+    color: #fff;
+    background: var(--color-principal);
+    cursor: pointer;
+    transition:background 0.5s ease;
 }
+button:hover{
+    background:var(--color-btn-hoover)
+}
+h1{    
+    font-family: 'Comforter', cursive;
+    letter-spacing: 2px;
+    font-size: 40px;
+    padding: 10px;
+     
+}
+.content_img{
+    position: relative;
+    width: 100%;
+}
+.content_img:before{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-secundario);
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+}
+.btn_menu{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.nav{
+    display: none;
+}
+
+/*------------------SLIDER-------------------------*/
+
+.slider{
+    position: relative;
+}
+.slider_img{
+    display: block;
+    width: 100%;
+    height: 80vh;
+}
+.slider_info{
+    position: absolute;
+    top:40%;
+    transform: translateX(20%);
+    z-index: 2;
+}
+.slider_txt{
+    color: #fff;
+    font-size: 20px;
+}
+.slider_title{
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.btn_slider{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+/*-----------------------SERVICIOS-----------------*/
+
+.services_title{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+}
+.content_img_services{
+    width: 90%;
+    margin:auto;
+}
+.content_background{
+    margin-bottom: 20px;
+}
+.content_background:before{
+    border-radius: 5%;
+}
+.services_img{
+    border-radius: 5%;
+    height: 70vh;
+}
+
+
