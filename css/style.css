@@ -40,7 +40,7 @@ h1{
 .article_title{
     text-align: center;
     font-size: 35px;
-    padding: 20px;
+    padding: 10px;
     font-weight: lighter;
 }
 .content_img{
@@ -141,9 +141,10 @@ header{
 .contenedor-clientes_card{
     width: 90%;
     margin: auto;
+    margin-top: 30px;
 }
 .card_clientes{
-    height: 300px;
+    
     background: rgb(255, 255, 255);
     margin-bottom: 30px;
     border-radius: 8px;
@@ -194,13 +195,20 @@ header{
 .experiencia{
     width: 90%;
     margin: auto;
+    margin-top: 30px;
+
+}
+.experiencia_descripcion{
+    overflow: hidden;
 }
 .experiencia_descripcion-texto{
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: .3px;
 }
 .btn-experiencia{
     margin: 30px 0;
+    margin-bottom: 0px;
+    width: 200px;
 }
 iframe{
     width: 100%;
@@ -236,7 +244,8 @@ iframe{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    height: 250px;
+    height: 100%;
+    padding: 40px 0;
 }
 .our-icon{
     color: var(--color-principal);
@@ -248,9 +257,13 @@ iframe{
     padding: 8px;
 }
 /*-----------------------Blog-----------------*/
+.blog{
+    margin-top: 30px;
+}
 .content_blog{
     width: 90%;
     margin: auto;
+    margin-top: 30px;
 }
 .blog_card{
     margin-bottom: 30px;
@@ -286,7 +299,7 @@ iframe{
     color: black;
     border-bottom: 2px solid var(--color-principal);
 }
-/*-----------------------Blog-----------------*/
+/*-----------------------FOOTER-----------------*/
 
 footer{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.445) 0%, rgba(32, 32, 32, 0.473) 100%), url(../img/imgFooter.jpg);
@@ -326,6 +339,89 @@ footer{
 }
 
 /*-----------------------MediaQueries-----------------*/
-
-
+@media screen and (min-width:520px){
+    .content_img_services{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+    }
+    .services_img{
+        height: 50vh;
+    }
+    .btn_services,
+    .btn-experiencia{
+        font-size: 18px;
+    }
+    .experiencia{
+        width: 80%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-top: 30px;
+    }
+    .info_our-trabajos{
+        width: 50%;
+    }
+    .content_our-trabajos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn_our-trabajos{
+        height: 40px;
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:720px){
+    .services_img{
+        height: 70vh;
+    }
+    .content_img_services{
+        width: 80%;
+    }
+    .contenedor-clientes_card,
+    .content_blog{
+        width: 70%;
+    }
+    .experiencia{
+        width: 70%;
+    }
+    .img_modelos{
+        object-fit: none;
+    }
+    .trabajos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .cuatro_lugares{
+        grid-column: span 4;
+    }
+    .dos_lugares{
+        grid-column: span 2; 
+    }
+}
 @media screen and (min-width:1024px){
+    .content_img_services{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 20px;
+    }
+    .services_img{
+        height: 50vh;
+    }
+    .contenedor-clientes_card,
+    .content_blog{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 20px;
+        width: 90%;
+    }
+    .experiencia{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+    }
+}
